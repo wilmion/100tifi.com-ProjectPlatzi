@@ -1,0 +1,94 @@
+:root{
+    --text-color-default: rgb(22, 22, 22);
+    --text-info-color: rgb(29, 66, 26);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: monospace;
+}
+/*---Header---*/
+.Header-main {
+    display: flex;
+    padding:10px 0;
+    border-bottom: black solid 1px;
+    margin-bottom: 0%;
+}
+.Header-logo{
+    margin-left:3%;
+}
+.Header-logo a{
+    text-decoration: none;
+    color: var(--text-color-default);
+    font-size: 2.8rem;
+    transition: 1s;
+}
+.Header-nav{
+    margin-left: auto;
+    margin-right: 2%;
+    font-size: 2.8rem;
+}
+.Header-nav a{
+    text-decoration: none;
+    color: var(--text-color-default);
+    transition: 1s;
+}
+.Header-main a:hover{
+    font-size: 3.2rem;
+}
+/*--Home--*/
+.Characters{
+    display: grid;
+    justify-items: center;
+    grid-gap: 70px 0;
+    margin-top: 3%;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.Characters img{
+    width: 80%;
+    height: auto;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    transition: 1s;
+}
+.Characters h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--text-color-default);
+    margin: 5% 0;
+}
+.Characters a{
+    text-decoration: none;
+}
+/*--characters--*/
+.Characters-inner{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    margin: 3%;
+}
+.Characters-card img , .Characters-card h2{
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+.Characters-card h3{
+    font-size: 1.8rem;
+    font-weight: 0;
+    margin: 10px 30px;
+    color: var(--text-info-color);
+}
+/*--Error404--*/
+.Error404{
+    min-height: 700px;
+    margin: auto;
+    background-image: url('https://www.cinco8.com/wp-content/uploads/2020/08/404.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
